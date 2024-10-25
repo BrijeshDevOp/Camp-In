@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent_container
+{
+    width: 50%;
+    height: 15%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+
+.parent_container .b{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.parent_container .b .box{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 70%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.parent_container .b .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.parent_container .profile_name
+{
+    justify-content: unset;
+}
+
+.parent_container .bc img{
+    object-fit: contain;
+    width: 40%;
+}

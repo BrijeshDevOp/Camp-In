@@ -1,0 +1,564 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.parent-container{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top,#fbc2eb 0% , #a6c1ee 100%);
+}
+
+/* ---------------------NAV_BAR------------------------------------ */
+.parent-container .nav-bar{
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr .5fr;
+  box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+  background: white;
+}
+
+.nav-bar .camp-profile
+{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.camp-profile .profile-box
+{
+  height: 90%;
+  width: 55%;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-box img{
+  height:50%;
+  object-fit: contain;
+}
+
+
+.camp-profile .profile-name
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.profile-name .profile-link
+{
+  display: block;
+  text-decoration: none;
+}
+.nav-bar .gap
+{
+  height: 100%;
+}
+
+.nav-bar .join-box{
+  height: 100%;
+  display: none;
+}
+
+.join-box .join-btn{
+  margin-top: 3%;
+  height: 80%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 15px;
+  background: beige;
+}
+
+/* --------------------------MAIn-section------------------------ */
+.parent-container .main-section{
+  height: 84%;
+  width: 100%;
+  position: fixed;
+  top: 8%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section .tab-content{
+  width: 50%;
+  height: 50%;
+}
+
+#tab1-content{
+  width: 55%;
+  height: 98%;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#tab1-content .home-post-container{
+  width: 60%;
+  height: 98%;
+  margin: 1% auto;
+  border-radius: 15px;
+  box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+  background: #f4f4f4;
+}
+
+/* --------------------------------------------------------------------- */
+  #tab1-content .home-post-container .home-post-img-box
+ {
+    height: 71%;
+    background: black;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+ }
+
+  #tab1-content .home-post-container .home-post-img-box img{
+    width: 100%;
+    object-fit: contain;
+ }
+ /* ------------------------------------------------------------------- */
+
+  #tab1-content .home-post-container .home-info-function-box
+ {
+    height: 8%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-bottom: 1px solid rgb(167, 153, 153);
+ }
+
+ #tab1-content .home-post-container .home-info-function-box .home-info-box
+ {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+ }
+
+ #tab1-content .home-post-container .home-info-function-box .home-info-box .home-profile-box
+ {
+    /* background: pink; */
+    height: 80%;
+    width: 70%;
+    margin:auto;
+    border-radius: 50%;
+    overflow: hidden;
+ }
+
+ #tab1-content .home-post-container .home-info-function-box .home-info-box .home-profile-box img
+ {
+    width: 100%;
+    height: 100%;
+ }
+
+  #tab1-content .home-post-container .home-info-function-box .home-info-box .home-name-box
+ {
+    height: 100%;
+    /* background: cyan; */
+    display: flex;
+    align-items: center;
+}
+
+#tab1-content .home-post-container .home-info-function-box .home-info-box .home-name-box .user-name
+{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+ }
+
+ /* --------------------------------------------------------------------------------------------------------------------- */
+  #tab1-content .home-post-container .home-info-function-box .home-function-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ #tab1-content .home-post-container .home-info-function-box .home-function-box .like-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #tab1-content .home-post-container .home-info-function-box .home-function-box .like-box img
+ {
+    object-fit: contain;
+    height: 70%;
+    width: 70%;
+ }
+
+  #tab1-content .home-post-container .home-info-function-box .home-function-box .like-count-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+ }
+ /* ----------------------------------------------------------------- */
+ #tab1-content .home-post-container .home-description-box
+ {
+    height: 21%;
+    /* background: goldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+  #tab1-content .home-post-container .home-description-box .home-post-description
+ {
+    height: 90%;
+    width: 95%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 2% 5%;
+    text-align: justify;
+ }
+ 
+ /* -------------------------------------TAB-3-CONTENt-------------------------------------------- */
+ #tab3-content{
+   width: 55%;
+   height: 84%;
+   border-radius: 15px;
+   box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+   background: #f4f4f4;
+   overflow: hidden;
+   
+  }
+  
+  #tab3-content .tab_btn_box{
+    height: 8%;
+    display: flex;
+    border-bottom:1px solid black;
+}
+
+.tab_btn_box .tab_icon_box{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tab_btn_box .tab_icon_box img{
+  height: 50%;
+  object-fit: contain;
+}
+
+#tab3-content .tab_inbox_container
+{
+  height: 92%;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #f9f9f9;
+}
+
+#tab3-content .tab_inbox_container .join-message-container
+{
+  width: 95%;
+  height: 10%;
+  border: 1px solid black;
+  margin: 1% auto;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 5fr 3fr;
+  grid-gap: 1%;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .box
+{
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .name_box
+{
+  justify-content: unset;
+}
+#tab3-content .tab_inbox_container .join-message-container .box .user_profile_box
+{
+  height: 70%;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .box .user_profile_box img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .control_box
+{
+  justify-content: unset;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .control_box .cb
+{
+  height: 100%;
+  background: pink;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .join-message-container .control_box .box1
+{
+  background: rgb(131, 229, 131);
+}
+
+#tab3-content .tab_inbox_container .join-message-container .control_box .box2
+{
+  background: rgb(232, 114, 114);
+}
+
+#tab3-content .tab_inbox_container .join-message-container .control_box .cb img
+{
+  height: 70%;
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------------------------REQUEST POSTS------------------------------------------------------------------------ */
+#tab3-content .tab_inbox_container .request_post_box
+{
+  height: 120%;
+  width: 50%;
+  border: 1px solid black;
+  margin: 1% auto;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_info 
+{
+  height: 7.5%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_info .b
+{
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_info .box1 .user_profile_box
+{
+  height: 75%;
+  width: 45%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_info .box2
+{
+  justify-content: unset;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_info .box1 .user_profile_box img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_card 
+{
+  height: 60%;
+  width: 100%;
+  border: 1px solid black;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_card img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_desc
+{
+  height: 25%;
+  border: 1px solid black;
+  overflow: hidden;
+  overflow-y:scroll;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns 
+{
+  height: 7.5%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns .btns
+{
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns .btns .inner_box
+{
+  height: 95%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns .btns .inner_box img
+{
+  height: 70%;
+  object-fit: contain;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns .btns #remove_btn
+{
+  background: red;
+}
+
+#tab3-content .tab_inbox_container .request_post_box .request_post_btns .btns #add_btn
+{
+  background: green;
+}
+
+
+/* ----------------------------CONTROL-box------------------------------------------- */
+.parent-container .control-box{
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-box .control-box-div{
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1%;
+  border-radius: 5px;
+  box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+  background: white;
+  border-radius: 30px;
+}
+
+.control-box-div .btn-box{
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-box a{
+  display: block;
+}
+
+.btn-box .icon-box{
+  height: 100%;
+  width: 30%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-box .btn-name{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.icon-box img{
+  height: 30%;
+  object-fit: contain;
+}
+
+/* ---------------------------------------------------------POPUP-MODAL-JOIN----------------------------------------------------------------------- */
+.parent-container .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parent-container .modal .modal-content {
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 100px;
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.parent-container .modal .modal-content p{
+  color: black;
+}
+
+.parent-container .modal .modal-content .join-group{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.parent-container .modal .modal-content .join-group .join-as-member
+{
+  height: 100%;
+  color: black;
+  font-style: bold;
+  margin-top: 2%;
+  cursor: pointer;
+}

@@ -1,0 +1,167 @@
+/* Styles for screens smaller than 576px (e.g., mobile phones) */
+@media only screen and (max-width: 575px) {
+ .btn5{
+        z-index: 10;
+        position: fixed;
+        bottom:10%;
+        right:0;
+        --btn-height:6.5%;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+   }
+
+   .tbtn label{
+    display: none;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .parent_container{
+      /* --parent-color:grey; */
+      --title-width:10%;
+      --search-bar-width:50%;
+      --notification-width:10%;
+    }
+    
+    .tab_buttons_container{
+        --height:92vh;
+        --width:18%;
+        --bottom:2%;
+        --left:1%;
+        /* display: none; */
+      }
+
+      .tabs{
+        --tabs-top:6%;
+        --tabs-left:20%;
+        --tabs-width:56%;
+        /* display: none; */
+        --tabs-height:92%
+    }
+
+    .side_bar{
+       --visibility:block;
+    }
+    
+    .side_bar{
+     --sidebar-top: 6%;
+     --sidebar-left: 77%;
+     --sidebar-width: 22%;
+     --sidebar-height: 90%; 
+    }
+
+    #closeModalButton{
+        display: none;
+    }
+
+    .tab_buttons_container{
+        --flex-direction:column;
+    }
+
+    .tbtn{
+        --btn-margin-X:1%;
+        --btn-margin-Y:5%;
+        --btn-width:90%;
+        --btn-height:10%;
+    }
+    
+
+    .btn5{
+        visibility: hidden;
+    }
+    
+  }
+    
+    /* Styles for screens between 992px and 1199px (e.g., medium desktops) */
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .tab_buttons_container{
+        --height:92vh;
+        --width:25%;
+        --bottom:2%;
+        --left:1%;
+      }
+
+      .tabs{
+        --tabs-top:6%;
+        --tabs-left:27%;
+        --tabs-width:72.5%;
+        --tabs-height:92%
+      }
+
+    .tab_buttons_container{
+        --flex-direction:column;
+    }
+
+    .tbtn{
+        --btn-margin-X:1%;
+        --btn-margin-Y:5%;
+        --btn-width:90%;
+        --btn-height:10%;
+   }
+
+   
+  }
+  
+  /* Styles for screens between 768px and 991px (e.g., tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tab_buttons_container{
+      --height:92vh;
+      --width:10%;
+      --bottom:2%;
+      --left:1%;
+    }
+    
+    .tabs{
+      --tabs-top:6%;
+      --tabs-left:13%;
+      --tabs-width:85%;
+      --tabs-height:92%
+    }
+    
+    .tab_buttons_container{
+      --flex-direction:column;
+    }
+    
+    .tbtn{
+      --btn-margin-X:1%;
+      --btn-margin-Y:5%;
+      --btn-width:90%;
+        --btn-height:10%;
+      }
+      
+      .tbtn label{
+       display: none;
+      }
+    }
+  
+  /* Styles for screens between 576px and 767px (e.g., small tablets and large phones) */
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .tab_buttons_container{
+        --height:92vh;
+        --width:10%;
+        --bottom:2%;
+        --left:1%;
+      }
+      
+      .tabs{
+        --tabs-top:6%;
+        --tabs-left:13%;
+        --tabs-width:85%;
+        --tabs-height:92%;
+      }
+      
+      .tab_buttons_container{
+        --flex-direction:column;
+      }
+      
+      .tbtn{
+        --btn-margin-X:1%;
+        --btn-margin-Y:5%;
+        --btn-width:90%;
+      }
+      .tbtn label{
+       display: none;
+      }
+    }
+    

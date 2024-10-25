@@ -1,0 +1,235 @@
+.parent-container #create-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+     /* Overlay background */
+    z-index: 600;
+    }
+
+    /* Style for the modal content */
+   .parent-container #create-modal #modal-content {
+    background-color:white;
+    margin: 1% 25%;
+    border: 1px solid #888;
+    width: 40%;
+    height: 95%;
+    position: relative;
+    }
+
+    /* Style for the close button */
+    .parent-container #create-modal .close-create-modal {
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    color: #fefefe;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    .parent-container #create-modal #modal-content  p{
+        border: 1px solid black;
+    }
+
+    .parent-container #create-modal .close-create-modal:hover {
+    color: #000;
+    }
+
+    .parent-container #create-modal #modal-content .tab-buttons{
+      /* background: rgb(227, 11, 47); */
+      height: 6%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .parent-container #create-modal #modal-content .tab-buttons .btns
+    {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content
+    {
+      height: 94%;
+      /* background: blue; */
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box
+    {
+      background: white;
+      height: 90%;
+      border: 1px solid black;
+      margin: 1% 1%;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-camp-name
+    {
+      border: 1px solid black;
+      height: 10%;
+      /* background: #a51717; */
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-camp-name .icon-box
+    {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-camp-name .icon-box img
+    {
+      width: 60%;
+      height: 60%;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-camp-name input
+    {
+      width: 80%;
+      height: 80%;
+    }
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .select-img-box
+    {
+      border: 1px solid black;
+      height: 60%;
+      /* background: grey; */
+    }
+
+    
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-img-box{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border: 1px solid black;
+      /* background: white; */
+    }
+    
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-img-box #img,#img1
+    {
+      width: 100%;
+      height:100%;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .post-img-box #img{
+      display: none;
+    }
+    
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .description-box
+    {
+      border: 1px solid black;
+      height: 30%;
+      /* background: pink; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-card-box .description-box #post-description
+    {
+      height: 90%;
+      width: 90%;
+      resize: none;
+      border: 1px solid black;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-button-box
+    {
+      width: 100%;
+      height: 8%;
+      background: grey;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-button-box #post
+    {
+      background: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent-container #create-modal #modal-content #post-tab-content .post-button-box #cancel
+    {
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==========================================================TAB2-CREATE-CAMP======================================================================== */
+    .parent-container #create-modal #modal-content #create-tab-content
+    {
+      background:#f5f5f5;
+      height: 94%;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box
+    {
+      width: 95%;
+      height: 95%;
+      margin: 1% auto;
+      background: rgb(224, 221, 221);
+      border:1px solid black; 
+      display: grid;
+      grid-template-rows: 1fr 2fr 4fr 1.5fr 1.5fr 1.5fr;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box .camp_name_box ,.message ,.camp_description_box ,.access_box ,.visibility_box ,.camp_buttons
+    {
+      width: 100%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box .camp_name_box input
+    {
+      height: 40%;
+      width: 60%;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box .camp_description_box textarea
+    {
+      height: 70%;
+      width: 60%;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box .camp_button
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent-container #create-modal #modal-content #create-tab-content .create-box .camp_button .campb
+    {
+      height: 100%;
+      width: 50%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }

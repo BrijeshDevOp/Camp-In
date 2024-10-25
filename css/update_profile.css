@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent_container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.parent_container .profile_box
+{   margin: 1% auto;
+    width: 72%;
+    height: 35%;
+}
+
+.parent_container .profile_box form{
+    width: 100%;
+    height: 100%;
+}
+.upload{
+    width: 20%;
+    height: 85%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#image{
+    background:url('profile.png');
+}
+.upload img{
+    border-radius: 50%;
+    border: 8px solid #DCDCDC;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.upload .rightRound{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upload .leftRound{
+    position: absolute;
+    /* bottom: 0;
+    left: 0; */
+    bottom: 4%;
+     left: 5%;
+    background: red;
+    width: 32px;
+    height: 32px;
+
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upload .fa{
+    color: white;
+}
+.upload input{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+.upload input::-webkit-file-upload-button, .upload input[type=submit]{
+    cursor: pointer;
+}
+
+
+.parent_container .user_name
+{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.parent_container .user_info
+{
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent_container .user_info .info_box
+{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+}
+
+.parent_container .user_info .info_box .b{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent_container .user_info .info_box .b img
+{
+    height: 50%;
+    object-fit: contain;
+}
+
+.parent_container #user_post_container
+{
+    height: 100%;
+    border: 1px solid black;
+    width: 50%;
+    margin: 1% auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.parent_container #user_post_container .user-post-container{
+    width: 60%;
+    height: 80%;
+    margin: 1% auto;
+    border-radius: 15px;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+    background: white;
+    overflow: hidden;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-camp-name-box
+ {
+    width: 100%;
+    height: 6%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    background: black;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-camp-name-box .home-at-icon-box
+ {
+    height: 100%;
+    /* background: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-camp-name-box .home-at-icon-box img{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+    filter: invert(79%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(107%) contrast(98%);
+ }
+
+ .parent_container #user_post_container .user-post-container .home-camp-name-box .home-camp-name {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+ }
+ .parent_container #user_post_container .user-post-container .home-camp-name-box .home-camp-name .home-camp-link
+ {
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+
+ }
+/* --------------------------------------------------------------------- */
+ .parent_container #user_post_container .user-post-container .home-post-img-box
+ {
+    height: 65%;
+    background: black;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-post-img-box img{
+    width: 100%;
+    object-fit: contain;
+ }
+ /* ------------------------------------------------------------------- */
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box
+ {
+    height: 8%;
+    /* background: yellowgreen; */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-bottom: 1px solid rgb(167, 153, 153);
+    border-radius: 3px;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-info-box
+ {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-info-box .home-profile-box
+ {
+    /* background: pink; */
+    height: 80%;
+    width: 80%;
+    margin:auto;
+    border-radius: 50%;
+    overflow: hidden;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-info-box .home-profile-box img
+ {
+    width: 100%;
+    height: 100%;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-info-box .home-name-box
+ {
+    height: 100%;
+    /* background: cyan; */
+    display: flex;
+    align-items: center;
+}
+
+.parent_container #user_post_container .user-post-container .home-info-function-box .home-info-box .home-name-box .user-name
+{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+ }
+
+ /* --------------------------------------------------------------------------------------------------------------------- */
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-function-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-function-box .like-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-function-box .like-box img
+ {
+    object-fit: contain;
+    height: 70%;
+    width: 70%;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-info-function-box .home-function-box .like-count-box
+ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+ }
+ /* ----------------------------------------------------------------- */
+ .parent_container #user_post_container .user-post-container .home-description-box
+ {
+    height: 21%;
+    /* background: goldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .parent_container #user_post_container .user-post-container .home-description-box .home-post-description
+ {
+    height: 90%;
+    width: 95%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 2% 5%;
+    text-align: justify;
+ }
+
+ .parent_container .logout_box
+ {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border: 1px solid black;
+    height: 25px;
+    width: 25;
+ }
+

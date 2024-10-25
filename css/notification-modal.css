@@ -1,0 +1,77 @@
+#notify-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 600;
+    }
+
+    /* Style for the modal content */
+    #notify-modal-content {
+    background-color: #fefefe;
+    margin: 5% 25%;
+    border: 1px solid #888;
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* max-width: 500px; */
+    }
+
+    #notify-modal-content .notify-box
+    {
+        width: 90%;
+        margin: 1% auto;
+        height: 20%;
+        display: block;
+        text-decoration: none;
+        color:black;
+        border: 1px solid black;
+    }
+
+    #notify-modal-content .notify-box .camp_name
+    {
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    #notify-modal-content .notify-box .camp_name img
+    {
+        height: 70%;
+        object-fit: contain;
+        margin: 0 2%;
+    }
+
+    #notify-modal-content .notify-box .info
+    {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #notify-modal-content .notify-box .info .user_name , .message
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    /* Style for the close button */
+    #notify-modal .close-notify-modal {
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    color: #fefefe;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    #notify-modal .close-notify-modal:hover {
+    color: #000;
+    }

@@ -1,0 +1,270 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    height: 80%;
+    background: #f4f4f4;
+    
+}
+
+.container .camp-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .camp-box .container-box{
+    width: 300px;
+    height: 300px;
+    /* background: cyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-box .c-box{
+    width: 90%;
+    height: 90%;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+    background:hsl(198,36%,58%);
+    position: relative;
+    border-radius: 10%;
+    border-bottom: white;
+}
+
+.c-box .i-box{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: -4%;
+    top: -4%;
+    background: #f5f5f5;
+    border: 2px solid hsl(198, 36%, 58%);
+    z-index: 5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-box img{
+    height: 50%;
+    width: 50%;
+}
+
+.c-box .view{
+    position: absolute;
+    width: 70%;
+    height: 15%;
+    background: hsl(198, 44%, 54%);
+    right: .7rem;
+    top: .3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view .i{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i img{
+    width: 60%;
+    height: 60%;
+}
+
+.view .c{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .5rem;
+}
+
+.c-box .description{
+    position: absolute;
+    width: 100%;
+    height: 82%;
+    background:hsl(198, 43%, 66%);
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.description .cname{
+    width: 96%;
+    height: 15%;
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.description .about{
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background: hsl(198, 40%, 72%);
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.description .join{
+    display: block;
+    width: 40%;
+    height: 15%;
+    position: absolute;
+    bottom: -5%;
+    left: 30%;
+    background: hsl(198, 80%, 41%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container .camp-box {
+    width: 100%;
+    height: 70%;
+    background:#f5f5f5;
+}
+
+.container .actions {
+    height: 30%;
+    background:#bb9a9a;
+}
+
+.container .actions .tab-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    height: 20%;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container .actions .tab-buttons .f{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.container .actions .tab-content{
+    display: none;
+    height: 80%;
+    background: #f9f9f9;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.container .actions #tab1{
+    display: block;
+}
+
+.container .actions #tab1 .icon-box, .color-box , .font-box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+.container .actions #tab1 .icon-box{
+    height: 70%;
+}
+
+.container .actions #tab1 .icon-colors{
+    height: 30%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .actions #tab1 .icon-colors .icon-color{
+    height: 90%;
+    width: 50px;
+    margin: 0 2px;
+}
+.container .actions #tab1 .icon-box .icons{
+    width: 50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .actions #tab1 .icon-box .icons img{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+}
+
+.container .actions #tab2 .color-box .themes
+{
+    width: 50px;
+    height: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+.control_box
+{
+    width: 20%;
+    height:8%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 4%;
+}
+
+.control_box .btns
+{
+    margin-top: 2%;
+    width: 50%;
+}
+
+.control_box .create
+{
+    background: rgb(160, 241, 160);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control_box .cancel
+{
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

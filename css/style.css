@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.parent-container .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 6fr 1fr;
+    z-index: 500;
+    cursor: pointer;
+    background:white;
+    border-radius: 5px;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+    
+}
+
+.nav-bar .box1 , .box2 , .box3
+{
+    height: 100%;
+    font-size: .8rem;
+}
+
+.nav-bar .box1{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.nav-bar .box1 .title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .box1 .title-box .box{
+    display: none;
+}
+
+.nav-bar .box1 .title-box .box{
+    display: none;
+    width: 50%;
+    height: 100%;
+}
+
+.nav-bar .box1 .title-box .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav-bar .box1 .title-box .name-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.nav-bar .box1 .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar .box1 .search-box .search-bar
+{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background: #f9f9f9;
+    border: 1px solid rgb(148, 136, 136);
+}
+
+.nav-bar .box1 .search-box .search-bar input
+{
+    width: 80%;
+    height: 60%;
+    outline: none;
+    border: 1px solid white;
+}
+
+.nav-bar .box1 .search-box .search-bar .icon-box
+{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .box1 .search-box .search-bar .icon-box img{
+    object-fit: contain;
+    width: 60%;
+}
+.parent-container .nav-bar .box2 
+{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+    z-index: 100;
+}
+
+.parent-container .nav-bar .box2 .btns
+{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-container .nav-bar .box2 .btns .img-box
+{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-container .nav-bar .box2 .btns .name-box
+{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+.parent-container .nav-bar .box2 .btns .img-box img
+{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+
+/* ==============================BOX3==================================== */
+
+.parent-container .nav-bar .box3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-container .nav-bar .box3 .profile-button
+{
+    display: block;
+    height: 60%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.parent-container .nav-bar .box3 .profile-button img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.parent-container .nav-bar .box3 .name-box
+{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+/* ============================TAB-contents============================= */
+
+/* .parent-container .tab-content{
+    position: fixed;
+    top:10%;
+    left:20%;
+    z-index:1;
+ } */
+

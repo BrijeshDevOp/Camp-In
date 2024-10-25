@@ -1,0 +1,193 @@
+@media only screen and (min-width:1200px)
+{
+}
+
+/* Styles for screens between 992px and 1199px (e.g., medium desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .parent-container{
+        background: rgb(165, 235, 165);
+    }
+}
+
+/* Styles for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .parent-container{
+        background: goldenrod;
+    }
+}
+
+/* Styles for screens between 576px and 767px (e.g., small tablets and large phones) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .parent-container{
+        background: pink;
+    }
+}
+
+/* Styles for screens smaller than 576px (e.g., mobile phones) */
+@media only screen and (max-width: 575px) {
+    .parent-container{
+       background: rgb(71, 69, 69);
+    } 
+
+    .parent-container .nav-bar{
+        height: 8%;
+        width: 100%;
+        background: red;
+        display: grid;
+        grid-template-columns: 5fr  1fr;
+        z-index: 700;
+    }
+
+    .parent-container .nav-bar .box1
+    {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .parent-container .nav-bar .box1 .name-box{
+        display: none;
+    }
+
+    .parent-container .nav-bar .box2{
+        position: absolute;
+        top: 92vh;
+        left: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        z-index: 700;
+    }
+
+    .parent-container .nav-bar .box2 .camp-list-box{
+        position: absolute;
+        bottom: 110%;
+        right: 2%;
+        border: 1px solid black;
+        border-radius: 40%;
+        width: 50px;
+        height: 50px;
+        z-index:1100;
+    }
+
+    .parent-container .nav-bar .box2 .camp-list-box .name-box
+    {
+        display: none;
+    }
+
+    .nav-bar .box1 .title-box .box
+    {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-bar .box1 .title-box .box img
+    {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        margin: 10% 20%;
+    }
+    .parent-container .nav-bar .box2 .btns .img-box
+    {
+        width: 100%;
+    }
+
+    .parent-container .nav-bar .box2 .btns .img-box img
+    {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    }
+    .parent-container .nav-bar .box2 .btns .name-box{
+        display: none;
+    }
+
+    /* ============================BOX-3========================== */
+
+    .parent-container .nav-bar .box3 .profile-button
+    {
+        width: 50%;
+        height: 75%;
+    }
+    .parent-container .nav-bar .box3 .name-box
+    {
+       display:none;
+    }
+
+    /* ===============================Admin-notification====================================== */
+    .parent-container .admin-notification
+    {
+        display: none;
+    }
+    /* =============================TABS============================== */
+
+    .parent-container .tab-content{
+        top:8%;
+        left:0;
+        z-index: 15;
+    }
+    /* =============================tab1========================================= */
+   .parent-container #tab1-content {
+    width: 100%;
+    }
+
+   .parent-container #tab1-content .home-post-card
+   {
+     width: 99%;
+   }
+
+   .parent-container #tab1-content .home-post-card .home-info .user-profile-box
+    {
+        width: 8%;
+    }
+
+    /* =============================tab2========================================= */
+    .parent-container #tab2-content { width: 100%;}
+
+     /* =============================tab3========================================= */
+    .parent-container #tab3-content {width: 100%;}
+
+    /* =============================CREATE-MODAL============================== */
+    .parent-container #create-modal{
+        /* background-color: rgb(190, 12, 12); */
+        top: 8%;
+        height:84% ;
+        border: 1px solid black;
+    }
+
+    .parent-container #create-modal #modal-content
+    {
+        width: 100%;
+        height: 100%;
+        margin:0 0;
+        border: 1px solid black;
+    }
+
+    .parent-container #create-modal span{
+        display: none;
+    }
+
+    /* ==============================Notification-modal========================================== */
+    .parent-container #notify-modal{
+        top: 8%;
+        height:84% ;
+        border: 1px solid black;
+    }
+
+    .parent-container #notify-modal #notify-modal-content
+    {
+        width: 100%;
+        height: 100%;
+        margin:0 0;
+        border: 1px solid black;
+    }
+
+    .parent-container #notify-modal span{
+        display: none;
+    }
+    /* ===========================CAMPLIST-MODAL================================== */
+    .Camp-Modal{
+        border: 1px solid black;
+        width: 60%;
+    }
+
+}
